@@ -58,7 +58,7 @@ function TaskList() {
 
     function handleSubmit(e){
         e.preventDefault();
-        // jeigu ne redagaivmo rėžimas
+        // jeigu ne redagavimo rėžimas
         if (!editTask) {
             const task = { id: Math.random(), description: taskInput, status: false };
             setTasks((oldTasks) => [...oldTasks, task]);
